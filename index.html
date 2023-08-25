@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <h1 id="mainHeading">Your Notes</h1>
+    <div class="container">
+        <div type="button" class="addNote" onclick="noteAdded()">
+            Add new note
+            <div id="add">+</div>
+        </div>
+
+        <div class="noteBox">
+            <div class="noteHeading white-background">
+                <h3 class="white-background">Coding Task</h3>
+                
+            </div>
+            <div class="noteContent white-background wrap">
+                Implement new feature in the app.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam architecto quo ipsum commodi, delectus suscipit expedita dolorem, neque modi asperiores libero ab earum? Beatae!
+            </div>
+            <div class="time white-background">
+                12-08-2023, 6:12 AM
+                <div class="cross white-background">
+                    <i class="mycross fa-solid fa-xmark white-background "></i>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <div class="parentpopup">
+
+        <div class="popup white-background">
+            <div class="popupHeading white-background">
+                <h2 class="white-background">Add your note</h2>
+            </div>
+            
+            <div class="popupContent white-background">
+                <input type="text" name="title" id="title" placeholder="Note's Title" class="white-background">
+                <textarea name="note" placeholder="Write your note here..." id="note" class="white-background" ></textarea>
+            </div>
+        
+            <div class="btns white-background">
+            <button class="btn" id="addbtn">Add</button>
+            <button class="btn" id="cancelbtn">Cancel</button>
+        </div>
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+   
+</body>
+</html>
